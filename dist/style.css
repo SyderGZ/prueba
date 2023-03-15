@@ -1,0 +1,99 @@
+html{
+  background:black;
+  font-family: sans-serif;
+}
+ul{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  min-height:100vh;
+  gap:40px;
+  background: rgb(55,55,55);
+background: radial-gradient(circle, rgba(55,55,55,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+h2{
+  text-align: center;
+  border: 1px solid white;
+  color:white;
+}
+li{
+  list-style:none;
+  border:3px white solid;
+  box-shadow:1px 1px 8px white;
+  height:300px;
+  margin: 10px;
+  padding: 10px;
+  color:white;
+  border-radius: 20px;
+  background: rgb(55,55,55);
+background: radial-gradient(circle, rgba(55,55,55,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.electrico{
+  border: 1px solid yellow;
+  text-align: center;
+  box-shadow:1px 1px 8px yellow;
+  color:yellow;
+}
+
+.tipo{
+  display: flex;
+  gap:5px;
+  justify-content:center;
+  text-indent:-5px;
+}
+
+
+p.tipo::before{
+  content:"";
+  background: center center no-repeat;
+  background-size:cover;
+  width:20px;
+  height:20px;
+  display:block;
+  translate:-5px 0px;
+}
+
+p.electrico::before{
+  background-image:url('https://cdn.pixabay.com/photo/2018/05/18/15/43/pokemon-3411389_1280.png');}
+
+p.fuego::before{
+  background-image:url('https://cdn.pixabay.com/photo/2018/05/20/01/40/pokemon-3414807_1280.png');
+}
+p.planta::before{
+  background-image:url('https://cdn.pixabay.com/photo/2018/05/20/01/41/pokemon-3414810_1280.png');
+}
+p.agua::before{
+  background-image:url('https://cdn.pixabay.com/photo/2018/05/21/13/06/pokemon-3418257_1280.png');
+}
+
+.fuego{
+  border: 1px solid red;
+  text-align: center;
+  box-shadow:1px 1px 8px red;
+  color:red;
+}
+.agua{
+    border: 1px solid cyan;
+  text-align: center;
+  box-shadow:1px 1px 8px cyan;
+  color:cyan;
+}
+
+.planta{
+    border: 1px solid #00ff11;
+  text-align: center;
+  box-shadow:1px 1px 8px #00ff11;
+  color:#00ff11;
+}
+
+li:hover{
+  scale:1.2;
+  transition:1s;
+}
+
+p{
+  border:none !important;
+  box-shadow:none !important;
+}
